@@ -21,7 +21,7 @@ class Search extends React.Component {
           this.setState({ searchItems: [] });
         }
       });
-    } else if (query.length === 0) {
+    } else if (query.length === 1) {
       this.setState({ searchItems: [] });
     }
   };

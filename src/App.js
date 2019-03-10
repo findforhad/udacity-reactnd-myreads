@@ -1,5 +1,5 @@
 import React from "react";
-import { get, getAll, update, search } from "./BooksAPI";
+import { getAll } from "./BooksAPI";
 import { Route } from "react-router-dom";
 import Search from "./Search";
 import Shelf from "./Shelf";
@@ -15,9 +15,9 @@ class App extends React.Component {
     });
   }
   addNewBook = books => {
-      console.log("sssss", books)
+    console.log("sssss", books);
     //   this.setState({books})
-  }
+  };
   render() {
     return (
       <div>
@@ -28,7 +28,9 @@ class App extends React.Component {
         />
         <Route
           path="/search"
-          component={({ history }) => <Search history={history} onAddNewBook={this.addNewBook}/>}
+          component={({ history }) => (
+            <Search history={history} onAddNewBook={this.addNewBook} />
+          )}
         />
       </div>
     );

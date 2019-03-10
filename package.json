@@ -18,10 +18,14 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "author": "Forhad Hossen Babu",
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "engines": {
+    "node": "10.13.0"
+  }
 }
